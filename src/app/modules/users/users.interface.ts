@@ -1,9 +1,9 @@
 import { Model } from 'mongoose'
 
 export type TUser = {
-  id: string
+  id?: string
   name: string
-  role: string
-  password: string
+  role?: string
+  password?: string
 }
 export type UserType = Model<TUser, object>

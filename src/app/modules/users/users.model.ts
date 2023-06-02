@@ -18,6 +18,6 @@ const userSchema = new mongoose.Schema<TUser>({
     type: String,
     required: true,
   },
-})
-const userModel = mongoose.model<TUser, UserType>('Users', userSchema)
-export default userModel
+},{timestamps:true})
+const USER = mongoose.model<TUser, UserType>('Users', userSchema)
+export default USER
