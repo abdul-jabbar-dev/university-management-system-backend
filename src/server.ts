@@ -11,7 +11,7 @@ async function run() {
     logger.info('🛢️  Database connection successfully')
 
     app.listen(config.port, () =>
-    logger.info(
+      logger.info(
         '.....................Server is running...............................'
       )
     )
