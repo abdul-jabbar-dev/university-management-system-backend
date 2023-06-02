@@ -2,20 +2,21 @@
 import mongoose from 'mongoose'
 import config from './config/index'
 import app from './app'
+import { logger } from './shared/logger.winston'
 
 async function run() {
   try {
-    console.log('⏳ Database connecting.....')
+    logger.info('⏳ Database connecting.....')
     await mongoose.connect(config.db_url as string)
-    console.log('🛢️  Database connection successfully')
+    logger.info('🛢️  Database connection successfully')
 
     app.listen(config.port, () =>
-      console.log(
+    logger.info(
         '.....................Server is running...............................'
       )
     )
   } catch (error) {
-    console.log('⛔ Fatal to connected database⛔ : ', error)
+    logger.error('⛔ Fatal to connected database⛔ : ', error)
   }
 }
 run()
