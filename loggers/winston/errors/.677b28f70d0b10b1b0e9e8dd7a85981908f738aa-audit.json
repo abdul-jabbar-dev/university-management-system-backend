@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 7
+    },
+    "auditLog": "C:\\Users\\Abdul Jabbar\\Desktop\\UniversityManagementServer\\loggers\\winston\\errors\\.677b28f70d0b10b1b0e9e8dd7a85981908f738aa-audit.json",
+    "files": [
+        {
+            "date": 1685899487925,
+            "name": "C:\\Users\\Abdul Jabbar\\Desktop\\UniversityManagementServer\\loggers\\winston\\errors\\error-23-04-06-23.log",
+            "hash": "efefe969580145263acc86948339a897dd2a46cc842191e5ecaa4a86b2d5bf54"
+        },
+        {
+            "date": 1685905894723,
+            "name": "C:\\Users\\Abdul Jabbar\\Desktop\\UniversityManagementServer\\loggers\\winston\\errors\\error-01-05-06-23.log",
+            "hash": "13e4c7b9c83792b59fb2298026ad5f70bd01325574f859c384c1442aa4376552"
+        },
+        {
+            "date": 1685980881777,
+            "name": "C:\\Users\\Abdul Jabbar\\Desktop\\UniversityManagementServer\\loggers\\winston\\errors\\error-22-05-06-23.log",
+            "hash": "cf7a82e6e9007765b33fd06b38a92492e6a1ee1a634280195cc48d3560f38ded"
+        },
+        {
+            "date": 1685984693226,
+            "name": "C:\\Users\\Abdul Jabbar\\Desktop\\UniversityManagementServer\\loggers\\winston\\errors\\error-23-05-06-23.log",
+            "hash": "4edfde3f0f58226724f3265cf5df080336f91b5f90ec5947810db64cfdd7b500"
+        },
+        {
+            "date": 1686022929361,
+            "name": "C:\\Users\\Abdul Jabbar\\Desktop\\UniversityManagementServer\\loggers\\winston\\errors\\error-09-06-06-23.log",
+            "hash": "422194fef70ac26c1f267a109b70ba3bf88b44c3dd18f923798068a41042d3bc"
+        },
+        {
+            "date": 1686024419581,
+            "name": "C:\\Users\\Abdul Jabbar\\Desktop\\UniversityManagementServer\\loggers\\winston\\errors\\error-10-06-06-23.log",
+            "hash": "d8b6bf9c7a561adfd90bbc146bf6e6e9ceadbbc0972c253522fd4d2ac978e492"
+        },
+        {
+            "date": 1686050677900,
+            "name": "C:\\Users\\Abdul Jabbar\\Desktop\\UniversityManagementServer\\loggers\\winston\\errors\\error-17-06-06-23.log",
+            "hash": "21ef301124358a41db253ec822e18fe229b9f2c49f1cb9c817ddb9af8a01224d"
+        }
+    ],
+    "hashType": "sha256"
+}

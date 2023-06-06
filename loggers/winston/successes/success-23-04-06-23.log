@@ -1,0 +1,37 @@
+info->  "⏳ Database connecting....."   :Sun Jun 04 2023/ 11:24 PM
+info->  "🛢️  Database connection successfully"   :Sun Jun 04 2023/ 11:24 PM
+info->  ".....................Server is running..............................."   :Sun Jun 04 2023/ 11:24 PM
+info->  "⏳ Database connecting....."   :Sun Jun 04 2023/ 11:41 PM
+info->  "🛢️  Database connection successfully"   :Sun Jun 04 2023/ 11:42 PM
+info->  ".....................Server is running..............................."   :Sun Jun 04 2023/ 11:42 PM
+info->  "⏳ Database connecting....."   :Sun Jun 04 2023/ 11:45 PM
+info->  "🛢️  Database connection successfully"   :Sun Jun 04 2023/ 11:45 PM
+info->  ".....................Server is running..............................."   :Sun Jun 04 2023/ 11:45 PM
+info->  "⏳ Database connecting....."   :Sun Jun 04 2023/ 11:47 PM
+info->  "⏳ Database connecting....."   :Sun Jun 04 2023/ 11:47 PM
+info->  "⏳ Database connecting....."   :Sun Jun 04 2023/ 11:47 PM
+info->  "🛢️  Database connection successfully"   :Sun Jun 04 2023/ 11:47 PM
+info->  ".....................Server is running..............................."   :Sun Jun 04 2023/ 11:47 PM
+info->  "⏳ Database connecting....."   :Sun Jun 04 2023/ 11:48 PM
+info->  "🛢️  Database connection successfully"   :Sun Jun 04 2023/ 11:48 PM
+info->  ".....................Server is running..............................."   :Sun Jun 04 2023/ 11:48 PM
+info->  "⏳ Database connecting....."   :Sun Jun 04 2023/ 11:48 PM
+info->  "🛢️  Database connection successfully"   :Sun Jun 04 2023/ 11:48 PM
+info->  ".....................Server is running..............................."   :Sun Jun 04 2023/ 11:48 PM
+info->  "⏳ Database connecting....."   :Sun Jun 04 2023/ 11:48 PM
+info->  "⏳ Database connecting....."   :Sun Jun 04 2023/ 11:48 PM
+info->  "⏳ Database connecting....."   :Sun Jun 04 2023/ 11:49 PM
+info->  "🛢️  Database connection successfully"   :Sun Jun 04 2023/ 11:49 PM
+info->  ".....................Server is running..............................."   :Sun Jun 04 2023/ 11:49 PM
+info->  "⏳ Database connecting....."   :Sun Jun 04 2023/ 11:51 PM
+info->  "🛢️  Database connection successfully"   :Sun Jun 04 2023/ 11:51 PM
+info->  ".....................Server is running..............................."   :Sun Jun 04 2023/ 11:51 PM
+info->  "⏳ Database connecting....."   :Sun Jun 04 2023/ 11:53 PM
+info->  "🛢️  Database connection successfully"   :Sun Jun 04 2023/ 11:53 PM
+info->  ".....................Server is running..............................."   :Sun Jun 04 2023/ 11:53 PM
+info->  "⏳ Database connecting....."   :Sun Jun 04 2023/ 11:53 PM
+info->  "🛢️  Database connection successfully"   :Sun Jun 04 2023/ 11:53 PM
+info->  ".....................Server is running..............................."   :Sun Jun 04 2023/ 11:53 PM
+info->  "⏳ Database connecting....."   :Sun Jun 04 2023/ 11:53 PM
+info->  "⏳ Database connecting....."   :Sun Jun 04 2023/ 11:55 PM
+error->  "⛔ Fatal to connected database⛔ :  querySrv ECONNREFUSED _mongodb._tcp.cluster0.qrbcvkp.mongodb.net"   :Sun Jun 04 2023/ 11:55 PM
