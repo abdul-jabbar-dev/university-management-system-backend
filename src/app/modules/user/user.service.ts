@@ -1,11 +1,11 @@
 import config from '../../../config'
-import { TUser } from './users.interface'
-import USER from './users.model'
-import { generateUserId } from './users.utils'
+import { TUser } from './user.interface'
+import USER from './user.model'
+import UserUtils from './user.utils'
 
-export const createUserDB = async (userInfo: TUser): Promise<TUser | null> => {
+const createUserDB = async (userInfo: TUser): Promise<TUser | null> => {
   // Auto genareting userId
-  const userId = await generateUserId()
+  const userId = await UserUtils.generateUserId()
   userInfo.id = userId
 
   // Auto genareting password
@@ -20,15 +20,15 @@ export const createUserDB = async (userInfo: TUser): Promise<TUser | null> => {
   return createdUser
 }
 
-export const getUsersDB = async () => {
-  const createdUser = await USER.find({})
-  if (!createdUser) {
-    throw new Error('Failed to Created user! ')
+const getUsersDB = async () => {
+  const allUser = await USER.find({})
+  if (!allUser) {
+    throw new Error('Failed to find user! ')
   }
-  return createdUser
+  return allUser
 }
 
-export const getLastUserId = async () => {
+const getLastUserIdDB = async () => {
   try {
     const lastId = await USER.findOne({}, { id: 1, _id: 0 })
       .sort({ createdAt: -1 })
@@ -38,3 +38,10 @@ export const getLastUserId = async () => {
     throw new Error('Something went wrong to create user id')
   }
 }
+
+const UserService = {
+  createUserDB,
+  getUsersDB,
+  getLastUserIdDB,
+}
+export default UserService

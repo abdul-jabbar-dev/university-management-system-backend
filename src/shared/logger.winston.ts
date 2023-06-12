@@ -19,10 +19,10 @@ export const logger = winston.createLogger({
         process.cwd(),
         'loggers',
         'winston',
-        'successes',
-        'success-%DATE%.log'
+        'all',
+        'all-%DATE%.log'
       ),
-      datePattern: 'HH-DD-MM-YY',
+      datePattern: 'DD-MM-YY',
       zippedArchive: true,
       maxSize: '20m',
       maxFiles: '7d',
@@ -35,7 +35,7 @@ export const logger = winston.createLogger({
         'errors',
         'error-%DATE%.log'
       ),
-      datePattern: 'HH-DD-MM-YY',
+      datePattern: 'DD-MM-YY',
       zippedArchive: true,
       level: 'error',
       maxSize: '20m',

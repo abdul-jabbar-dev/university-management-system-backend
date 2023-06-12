@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 7
+    },
+    "auditLog": "C:\\Users\\Abdul Jabbar\\Desktop\\UniversityManagementServer\\loggers\\winston\\all\\.9d593e4c3c77d32ac249a04f4a93e9b0be0eb213-audit.json",
+    "files": [
+        {
+            "date": 1686511044854,
+            "name": "C:\\Users\\Abdul Jabbar\\Desktop\\UniversityManagementServer\\loggers\\winston\\all\\all-12-06-23.log",
+            "hash": "cb8d50f919697cc4e1c6493f63b18491a9c147f9e9c3a1da87ac80fcabc67dd5"
+        },
+        {
+            "date": 1686593010833,
+            "name": "C:\\Users\\Abdul Jabbar\\Desktop\\UniversityManagementServer\\loggers\\winston\\all\\all-13-06-23.log",
+            "hash": "4f2cb5c5d31ea883d44ac4fea3611735b9310850e9a6c9e7d574aab10b641c73"
+        }
+    ],
+    "hashType": "sha256"
+}

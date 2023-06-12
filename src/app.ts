@@ -1,22 +1,29 @@
+import express, { Application } from 'express';
+import cors from 'cors';
+import UserRoute from './app/modules/user/user.router';
+import GlobalEmailHandleMiddleware from './middlewares/globalErrorHandle';
+import AcademicSemisterRoute from './app/modules/academicSemester/academicSemester.route';
+import MyError from './Errors';
+const app: Application = express();
 
-import express, { Application, Request, Response } from 'express'
-import cors from 'cors'
-import usersRouter from './app/modules/users/users.router'
-import GlobalEmailHandleMiddleware from './middlewares/globalErrorHandle'
-const app: Application = express()
-
-app.use(cors())
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Application routes
-app.use('/api/v1/users', usersRouter)
+app.use('/api/v1/users', UserRoute);
+app.use('/api/v1/academic-semeters', AcademicSemisterRoute);
 
-app.get('/', (req: Request, res: Response ) => {
-   res.send("Home")
-}) 
 
+// Not found handler 
+app.use((req, res, next) => {
+  next(new MyError(404, req.originalUrl + ' not found'));
+});
+
+// app.get('/', (req, res) :RequestHandler=> {
+//   console.log(x)
+// })
 
 // Erorr handler
-app.use(GlobalEmailHandleMiddleware)
-export default app
+app.use(GlobalEmailHandleMiddleware);
+export default app;

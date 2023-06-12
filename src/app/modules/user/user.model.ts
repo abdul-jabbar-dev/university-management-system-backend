@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-import { TUser, UserType } from './users.interface'
+import { TUser, UserType } from './user.interface'
 
 const userSchema = new mongoose.Schema<TUser>(
   {
@@ -12,8 +12,7 @@ const userSchema = new mongoose.Schema<TUser>(
       required: true,
     },
     password: {
-      type: String,
-      required: true,
+      type: String, 
     },
     role: {
       type: String,
