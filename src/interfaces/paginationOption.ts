@@ -9,5 +9,3 @@ export type TPaginationAndSortOptions = Required<TPaginationOption> & {
   sortOrder: SortOrder;
   skip: number;
 };
-
-

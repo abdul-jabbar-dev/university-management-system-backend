@@ -1,12 +1,12 @@
 class MyError extends Error {
-  myStatus: number
+  myStatus: number;
   constructor(status: number, message: string, stack = '') {
-    super(message)
-    this.myStatus = status
+    super(message);
+    this.myStatus = status;
     if (stack) {
-      this.stack = stack
+      this.stack = stack;
     }
-    Error.captureStackTrace(this, this.constructor)
+    Error.captureStackTrace(this, this.constructor);
   }
 }
-export default MyError
+export default MyError;

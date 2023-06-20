@@ -6,14 +6,14 @@
     "auditLog": "C:\\Users\\Abdul Jabbar\\Desktop\\UniversityManagementServer\\loggers\\winston\\errors\\.ac04132daab189d7786b7ce16f7512593652d11d-audit.json",
     "files": [
         {
-            "date": 1686511044868,
-            "name": "C:\\Users\\Abdul Jabbar\\Desktop\\UniversityManagementServer\\loggers\\winston\\errors\\error-12-06-23.log",
-            "hash": "f3978a34c5112183d8013ce55bdab37f56fdbe0be0078e90ddb334ade24890b1"
+            "date": 1686765611897,
+            "name": "C:\\Users\\Abdul Jabbar\\Desktop\\UniversityManagementServer\\loggers\\winston\\errors\\error-15-06-23.log",
+            "hash": "1bb4c795c4d6af228f121b2e317e87c42bdbc151e2fbfb633af6e5fb9c236a5a"
         },
         {
-            "date": 1686593010844,
-            "name": "C:\\Users\\Abdul Jabbar\\Desktop\\UniversityManagementServer\\loggers\\winston\\errors\\error-13-06-23.log",
-            "hash": "46415606279ff19736c231c971c963a903fd3206dda5fe1dff39b1498fc094c2"
+            "date": 1687286681044,
+            "name": "C:\\Users\\Abdul Jabbar\\Desktop\\UniversityManagementServer\\loggers\\winston\\errors\\error-21-06-23.log",
+            "hash": "9b171b9e8ada23fa545188b35346fcb0d223cd983f78f2bd6fab1474d995014b"
         }
     ],
     "hashType": "sha256"

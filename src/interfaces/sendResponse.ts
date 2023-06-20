@@ -1,9 +1,9 @@
 export type TResponseData<T> = {
-  meta: {
+  meta?: {
     page: number;
     limit: number;
     total: number;
     dataFound?: number;
   };
-  data: T;
+  data?: T|null ;
 };

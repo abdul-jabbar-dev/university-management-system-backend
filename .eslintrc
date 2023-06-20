@@ -4,7 +4,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint"], 
+  "plugins": ["@typescript-eslint"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -13,8 +13,8 @@
 
   "rules": {
     "no-unused-vars": "error",
-    "no-console":"error",
-    "no-unused-expressions":"error" 
+    "no-console": "warn",
+    "no-unused-expressions": "error"
   },
 
   "env": {

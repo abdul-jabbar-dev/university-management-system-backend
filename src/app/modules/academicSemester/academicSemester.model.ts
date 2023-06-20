@@ -40,7 +40,7 @@ academicSemisterSchema.pre('save', async function (next) {
   const exist = await ACADEMINSEMESTER.find({
     year: this.year,
     title: this.title,
-  }); 
+  });
   if (exist.length > 0) {
     throw new MyError(
       409,

@@ -1,13 +1,13 @@
-import winston from 'winston'
-import 'winston-daily-rotate-file'
-import path from 'path'
+import winston from 'winston';
+import 'winston-daily-rotate-file';
+import path from 'path';
 const formate = winston.format.printf(({ message, level, timestamp }) => {
-  const date = new Date(timestamp)
+  const date = new Date(timestamp);
   return `${level}->  "${message}"   :${date.toDateString()}/ ${date.toLocaleString(
     'en-US',
     { hour: 'numeric', minute: 'numeric', hour12: true }
-  )}`
-})
+  )}`;
+});
 
 export const logger = winston.createLogger({
   format: winston.format.combine(winston.format.timestamp(), formate),
@@ -42,4 +42,4 @@ export const logger = winston.createLogger({
       maxFiles: '7d',
     }),
   ],
-})
+});

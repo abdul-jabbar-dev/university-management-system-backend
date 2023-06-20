@@ -29,8 +29,6 @@ const getUser: RequestHandler = catchAsync(async (req, res) => {
   });
 });
 
-
- 
 const UserController = {
   getUser,
   createUser,

@@ -1,5 +1,5 @@
-import mongoose from 'mongoose'
-import { TUser, UserType } from './user.interface'
+import mongoose from 'mongoose';
+import { TUser, UserType } from './user.interface';
 
 const userSchema = new mongoose.Schema<TUser>(
   {
@@ -12,7 +12,7 @@ const userSchema = new mongoose.Schema<TUser>(
       required: true,
     },
     password: {
-      type: String, 
+      type: String,
     },
     role: {
       type: String,
@@ -20,6 +20,6 @@ const userSchema = new mongoose.Schema<TUser>(
     },
   },
   { timestamps: true }
-)
-const USER = mongoose.model<TUser, UserType>('Users', userSchema)
-export default USER
+);
+const USER = mongoose.model<TUser, UserType>('Users', userSchema);
+export default USER;

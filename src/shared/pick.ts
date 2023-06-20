@@ -1,11 +1,13 @@
 import { SortOrder } from 'mongoose';
-import { TPaginationAndSortOptions, TPaginationOption } from '../interfaces/paginationOption';
+import {
+  TPaginationAndSortOptions,
+  TPaginationOption,
+} from '../interfaces/paginationOption';
 
 const pickQuery = <T extends Record<string, unknown>, k extends keyof T>(
   obj: T,
   keys: k[]
 ): Partial<T> => {
-
   const finalObj: Partial<T> = {};
 
   for (const key of keys) {
@@ -16,7 +18,9 @@ const pickQuery = <T extends Record<string, unknown>, k extends keyof T>(
   return finalObj;
 };
 
-export const paginationOption = (options: TPaginationOption):TPaginationAndSortOptions => {
+export const paginationOption = (
+  options: TPaginationOption
+): TPaginationAndSortOptions => {
   const page = Number(options.page || 1);
   const limit = Number(options.limit || 10);
   let sortBy: string = options.sortBy || 'createdAt';

@@ -2,12 +2,13 @@
 /* eslint-disable no-unused-expressions */
 import { ErrorRequestHandler } from 'express';
 import config from '../config';
-import IGenericErrorMessage from '../interfaces/Errors/genericErrorMessage';
 import validationErrorHandle from '../Errors/validationError';
 import MyError from '../Errors';
-import { Error } from 'mongoose'; 
+import { Error } from 'mongoose';
 import { ZodError } from 'zod';
-import validationZodErrorHandle from '../Errors/validationZodErrorHandle';
+import handleZodError from '../Errors/handleZodError';
+import handleCastError from '../Errors/handleCastError';
+import { IGenericErrorMessages } from '../interfaces/Errors/genericErrorResponse';
 
 const GlobalEmailHandleMiddleware: ErrorRequestHandler = (
   err,
@@ -17,7 +18,7 @@ const GlobalEmailHandleMiddleware: ErrorRequestHandler = (
 ) => {
   let statusCode = 400;
   let message = 'Something went wrong';
-  let errorMessages: IGenericErrorMessage[] = [];
+  let errorMessages: IGenericErrorMessages[] = [];
 
   // eslint-disable-next-line no-console
   // config.env === 'development'
@@ -29,11 +30,17 @@ const GlobalEmailHandleMiddleware: ErrorRequestHandler = (
     statusCode = getValidationError?.statusCode || statusCode;
     message = getValidationError?.messages;
     errorMessages = getValidationError?.errorMessages;
+  } else if (err?.name === 'CastError') {
+    const castErr = handleCastError(err);
+    statusCode = castErr.statusCode;
+    message = castErr.messages;
+    statusCode = castErr.statusCode;
+    errorMessages = castErr.errorMessages;
   } else if (err instanceof Error) {
     message = err.message;
     errorMessages = [{ path: '', message: '' }];
   } else if (err instanceof ZodError) {
-    const zodValidationError = validationZodErrorHandle(err);
+    const zodValidationError = handleZodError(err);
     message = zodValidationError.messages;
     statusCode = zodValidationError.statusCode;
     errorMessages = zodValidationError.errorMessages;
