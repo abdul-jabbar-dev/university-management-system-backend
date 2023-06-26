@@ -5,6 +5,7 @@ import GlobalEmailHandleMiddleware from './middlewares/globalErrorHandle';
 import AcademicSemisterRoute from './app/modules/academicSemester/academicSemester.route';
 import MyError from './Errors';
 import AcademicFacultyRoute from './app/modules/academicFaculty/academicFaculty.route';
+  
 const app: Application = express();
 
 app.use(cors());

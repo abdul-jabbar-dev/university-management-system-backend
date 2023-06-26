@@ -1,11 +1,13 @@
 import config from '../../../config';
-import { TUser } from './user.interface';
-import USER from './user.model';
+import { TUser, TUser_role } from './user.interface';
+import USER from './user.model'; 
 import UserUtils from './user.utils';
-
 const createUserDB = async (userInfo: TUser): Promise<TUser | null> => {
   // Auto genareting userId
-  const userId = await UserUtils.generateUserId();
+  const data = {
+    year:'2025'
+  }
+  const userId = await UserUtils.generateStudentId(data);
   userInfo.id = userId;
 
   // Auto genareting password
@@ -28,9 +30,12 @@ const getUsersDB = async () => {
   return allUser;
 };
 
-const getLastUserIdDB = async () => {
+const getLastUserIdDB = async (role: TUser_role[]) => {
   try {
-    const lastId = await USER.findOne({}, { id: 1, _id: 0 })
+    const lastId = await USER.findOne(
+      { role: { $in: [...role] } },
+      { id: 1, _id: 0 }
+    )
       .sort({ createdAt: -1 })
       .lean();
     return lastId?.id;
